@@ -1,23 +1,59 @@
 public class Journal
 {
-    public List<Entry> _entries;
-    // public List<Entry> _entries = new List<Entry>();
+    // This is the member variable
+    public List<Entry> _entries = new List<Entry>();
 
-    public void AddEntry()
+    // These are the methods
+    public void AddEntry(Entry newEntry)
     {
-        // Console.WriteLine("This function will enable the user to add an entry.");
+        _entries.Add(newEntry);
     }
     public void DisplayAll()
     {
-        // Console.WriteLine("This function will display all the entries.");
+        foreach (Entry entry in _entries)
+        {
+            entry.Display();
+        }
     }
     public void SaveToFile(string file)
     {
-        // Console.WriteLine("This function will save the entry to a file.");
+        using (StreamWriter outputFile = new StreamWriter(file))
+        {
+            foreach (Entry entry in _entries)
+            {
+            string promptText = entry._promptText.Replace("\"", "\"\"").Replace(",", "~");
+            string entryText = entry._entryText.Replace("\"", "\"\"").Replace(",", "~");
+            outputFile.WriteLine($"{entry._date},{promptText},{entryText}");
+            }
+            // I looked up different sites to help me with this. I found this 
+            // https://stackoverflow.com/questions/8090759/how-to-write-a-value-which-contain-comma-to-a-csv-file-in-c
+            // but it gave me issues when loading the file. I checked with chatGPT as well and with a combination
+            // of both, I arrived at the above solution. I learned about escaping characters
+            // and the .Replace method.
+        }
     }
     public void LoadFromFile(string file)
     {
-        // Console.WriteLine("This function will load the entries from a file.");
+        string[] lines = System.IO.File.ReadAllLines(file);
+        foreach (string line in lines)
+        {
+            Entry entry = new Entry();
+            string[] parts = line.Split(",");
+            entry._date = parts[0];
+            entry._promptText = parts[1];
+            entry._entryText = parts[2];
+            if (parts[1].Contains("\"\"") || parts[1].Contains("~"))
+            {
+                entry._promptText = parts[1].Replace("\"\"", "\"").Replace("~", ",");
+            }
+
+            if (parts[2].Contains("\"\"") || parts[2].Contains("~"))
+            {
+                entry._entryText = parts[2].Replace("\"\"", "\"").Replace("~", ",");
+            }
+
+            _entries.Add(entry);
+        }
     }
 
 }
