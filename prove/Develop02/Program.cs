@@ -5,6 +5,9 @@ class Program
 {
     static void Main(string[] args)
     {
+        // To exceed requirements I improved the process of saving
+        // and loading by saving to a .csv file that could be opened in Excel.
+        // I was sure to account for quotation marks and commas correctly in the content.
         Console.WriteLine("Welcome to the Journal Program!\n");
         Console.WriteLine("Please select one of the following choices:");
         Console.WriteLine("1. Write");
