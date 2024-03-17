@@ -1,3 +1,5 @@
+using System.Data;
+
 public class Reference
 {
     private string _book;
@@ -11,9 +13,23 @@ public class Reference
         _chapter = chapter;
         _verse = verse;
     }
+    public Reference(string book, int chapter, int startVerse, int endVerse)
+    {
+        _book = book;
+        _chapter = chapter;
+        _verse = startVerse;
+        _endVerse = endVerse;
+    }
 
     public string GetDisplayText()
     {
-        return "";
+        if (_endVerse == 0)
+        {
+            return $"{_book} {_chapter}:{_verse}";
+        }
+        else
+        {
+            return $"{_book} {_chapter}:{_verse}-{_endVerse}";
+        }
     }
 }
