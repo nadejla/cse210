@@ -1,25 +1,27 @@
 public class EternalGoal : Goal
 {
     // This is the constructor for EternalGoal
-    public EternalGoal(string name, string description, string points) : base(name, description, points)
+    public EternalGoal(string name, string description, int points) : base(name, description, points)
     {
-
+        _shortName = name;
+        _description = description;
+        _points = points;
     }
 
     // These are the methods for EternalGoal
-    public override void RecordEvent()
+    public override int RecordEvent()
     {
-        throw new NotImplementedException();
+        return _points;
     }
 
     public override bool IsComplete()
     {
-        throw new NotImplementedException();
+        return false;
     }
 
     public override string GetStringRepresentation()
     {
-        throw new NotImplementedException();
+        return $"EternalGoal|{_shortName}~{_description}~{_points}";
     }
 
 }

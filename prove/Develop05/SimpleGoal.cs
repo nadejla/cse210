@@ -4,25 +4,36 @@ public class SimpleGoal : Goal
     private bool _isComplete;
 
     // This is the constructor for SimpleGoal
-    public SimpleGoal(string name, string description, string points) : base(name, description, points)
+    public SimpleGoal(string name, string description, int points) : base(name, description, points)
     {
-
+        _shortName = name;
+        _description = description;
+        _points = points;
     }
 
     // These are the methods for SimpleGoal
-    public override void RecordEvent()
+    public override int RecordEvent()
     {
-        throw new NotImplementedException();
+        _isComplete = true;
+        return _points;
     }
 
     public override bool IsComplete()
     {
-        throw new NotImplementedException();
+        if (_isComplete == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     public override string GetStringRepresentation()
     {
-        throw new NotImplementedException();
+        string goalStatus = _isComplete.ToString();
+        return $"SimpleGoal|{_shortName}~{_description}~{_points}~{goalStatus}";
     }
 
 }

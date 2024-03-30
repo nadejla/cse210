@@ -7,30 +7,51 @@ public class ChecklistGoal : Goal
     private int _bonus;
 
     // These are the constructors for ChecklistGoal
-    public ChecklistGoal(string name, string description, string points, int target, int bonus) : base(name, description, points)
+    public ChecklistGoal(string name, string description, int points, int target, int bonus) : base(name, description, points)
     {
-
+        _isComplete = false;
+        _amountCompleted = 0;
+        _target = target;
+        _bonus = bonus;
     }
 
     // These are the methods for ChecklistGoal
-    public override void RecordEvent()
+    public override int RecordEvent()
     {
-        throw new NotImplementedException();
+        _amountCompleted++;
+        return _points;
     }
 
     public override bool IsComplete()
     {
-        throw new NotImplementedException();
+        if (_amountCompleted >= _target)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }        
     }
 
     public override string GetDetailsString()
     {
-        return base.GetDetailsString();
+        string goalStatus = ". [ ]";
+        if (IsComplete() == true)
+        {
+            goalStatus = ". [X]";
+        }
+        return $"{goalStatus} {_shortName} ({_description}) -- Currently completed: {_amountCompleted}/{_target}";
     }
-    
+
     public override string GetStringRepresentation()
     {
-        throw new NotImplementedException();
+        return $"ChecklistGoal|{_shortName}~{_description}~{_points}~{_bonus}~{_target}~{_amountCompleted}";
+    }
+
+    public int GetBonus()
+    {
+        return _bonus;
     }
 
 }

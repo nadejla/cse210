@@ -3,12 +3,12 @@ using System.ComponentModel;
 public abstract class Goal
 {
     // These are the attributes
-    private string _shortName;
-    private string _description;
-    private string _points;
+    protected string _shortName;
+    protected string _description;
+    protected int _points;
     
     // This is the constructor
-    public Goal(string name, string description, string points)
+    public Goal(string name, string description, int points)
     {
         _shortName = name;
         _description = description;
@@ -16,14 +16,24 @@ public abstract class Goal
     }
     
     // These are the methods
-    public abstract void RecordEvent();
+    public abstract int RecordEvent();
 
     public abstract bool IsComplete();
 
     public virtual string GetDetailsString()
     {
-        return "string";
+        string goalStatus = ". [ ]";
+        if (IsComplete() == true)
+        {
+            goalStatus = ". [X]";
+        }
+        return $"{goalStatus} {_shortName} ({_description})";
     }
 
     public abstract string GetStringRepresentation();
+
+    public string GetGoalName()
+    {
+        return _shortName;
+    }
 }
