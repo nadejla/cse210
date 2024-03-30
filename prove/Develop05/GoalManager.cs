@@ -6,12 +6,14 @@ public class GoalManager
     // These are the attributes
     private List<Goal> _goals;
     private int _score;
+    private string _rank;
 
     // This is the constructor
     public GoalManager()
     {
         _goals = new List<Goal>();
         _score = 0;
+        _rank = "Beginner";
     }
 
     // These are the methods
@@ -73,7 +75,50 @@ public class GoalManager
     {
         Console.WriteLine();
         Console.WriteLine($"You have {_score} points.");
+        DetermineRank();
+        Console.WriteLine($"You are ranked {_rank}.");
         Console.WriteLine();
+    }
+
+    public void DetermineRank()
+    {
+        if (_goals.Count == 0)
+        {
+            _rank = "Beginner";
+            return;
+        }
+
+        double maxScore = 0;
+        foreach (Goal goal in _goals)
+        {
+            int points = goal.GetPoints();
+            maxScore += points;
+        }
+        
+        double oneThirdScore = maxScore / 3;
+        double twoThirdsScore = maxScore / 3 * 2;
+        
+
+        if (_score == 0)
+        {
+            _rank = "Beginner";
+        }
+        else if (_score < oneThirdScore)
+        {
+            _rank = "Bronze";
+        }
+        else if (_score < twoThirdsScore)
+        {
+            _rank = "Silver";
+        }
+        else if (_score <= maxScore)
+        {
+            _rank = "Gold";
+        }
+        else
+        {
+            _rank = "Diamond";
+        }
     }
     public void ListGoalNames()
     {
