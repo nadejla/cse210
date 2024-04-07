@@ -1,0 +1,701 @@
+100000,Cash Clearing/Claim on Cash
+100005,Wells Fargo Bank Accounts Payable
+100010,Wells Fargo Bank Payroll
+100015,Wells Fargo Bank Limited Purchase
+100100,Cash In Bank
+100105,Vault Cash-Cashiers
+100110,Cash SIS-Spring
+100115,Cash SIS-Summer
+100120,Cash SIS-Fall
+100125,Payment via OnAccess
+100130,Petty Cash and Change
+100135,Cash Held In Trusts
+100140,Dfcm Cash
+100145,Investment Pool
+110005,CUR Investments
+110010,CUR Trustee Investments
+110015,CUR Investment Discount
+110020,CUR Unrealized Gain/Loss
+110025,CUR Investments Held in Trusts
+110030,CUR Interest Receivable
+120005,Buyback Clearing Acct
+120010,Accts Rec-Students Past Due
+120012,Accts Rec-Students Banner
+120014,Accts Rec-LMS
+120015,Accts Rec-Other
+120017,Accts Rec-Third Party/Sponsor Stud
+120020,Accts Rec-Employee
+120025,Accts Rec-Year End
+120027,Accts Rec-Year End Accrual
+120030,Grant/Contracts Unbilled
+120035,Dishonored Checks
+120040,Allowance Doubt Acct
+120042,Allowance Doubt Acct-LMS
+120045,Collections Holding Outside Source
+120050,Accts Rec-ITEX McKay
+130005,Inven Merc/Resal
+130010,Inven Oper Supps
+130015,Inven Food
+130100,Warehouse/Stores Inventory
+130105,Warhouse/Stores Inv Transfers In
+130110,Warehouse/Stores Inv Transfers Out
+130115,Warehouse/Stores Inv Valuation
+140005,Prepaid Expense
+140010,Payroll Clearing
+140015,Payroll Charges
+140020,Deferred Charges
+160005,Suspense Activity
+170001,Due from Other Funds
+180004,CUR Notes Receivable-Year End Acc
+180005,CUR Notes Receivable
+180010,CUR Loans Rec-NDSL
+180015,CUR Loan Principal Collected
+180020,CUR Defaulted Loans Assigned
+180021,CUR Loan Assigned-Disability
+180025,CUR Principal Cancelled-Disability
+180030,CUR Principal Cancelled-Teaching
+180031,CUR Princ Canc-Teach Math Science
+180035,CUR Principal Adjustments-Other
+180040,CUR Principal Cancelled-Death
+180045,CUR Principal Cancelled-Bankruptcy
+180050,CUR Principal Cancelled-Nursing
+180051,CUR Principal Cancelled-Fire Fighters
+180055,CUR Principal Cancelled-Law Enforce
+180060,CUR Principal Cancelled-Family Serv
+180065,CUR Principal Cancelled-Head Start
+180070,CUR Principal Cancelled-Military
+180090,Allowance for Doubtful Acct-Perkins
+180100,Collections Perkins Holding
+180101,Collections IHELP Holding
+180105,Collections Miscellaneous Holding
+180110,CUR Loans Rec-IHELP
+180115,CUR Loan Principal Collected-IHELP
+180120,CUR Defaulted Loans-IHELP
+185015,Pledges Rec Current Portion
+191000,NC Cash and Cash Equivalents
+192005,NC Investments
+192010,NC Trustee Investments
+192015,NC Investment Discount
+192020,NC Unrealized Gain/Loss
+192025,NC Investments Held in Trusts
+193005,NC Notes Receivable
+193010,NC Loans Rec-NDSL
+193015,NC Loan Principal Collected
+193020,NC Defaulted Loans Assigned
+193025,NC Principal Cancelled-Disability
+193030,NC Principal Cancelled-Teaching
+193035,NC Principal Adjustments-Other
+193040,NC Principal Cancelled-Death
+193045,NC Principal Cancelled-Bankruptcy
+193050,NC Principal Cancelled-Nursing
+193055,NC Principal Cancelled-Law Enforce
+193060,NC Principal Cancelled-Family Serv
+193065,NC Principal Cancelled-Head Start
+194005,Inactive-was an error
+194010,Inactive-set up in error
+194015,Pledges Receivable
+195005,Land
+195010,Land Improvements-Non Depreciable
+195015,Works of Art/Historical Treasures
+195020,Land Improvements-Depreciable
+195025,Infrastructure
+195030,Buildings
+195035,Equipment
+195040,Library Books/Films
+195045,Leasehold Improvements
+195050,Construction In Prog
+199005,Land Improvements-Accum Depr
+199010,Infrastructure-Accum Depr
+199015,Buildings-Accumulated Depreciation
+199020,Equipment-Accumulated Depreciation
+199025,Library Books/Films-Accum Depr
+199030,Leasehold Improvements-Accum Depr
+200005,Interest Payable
+200008,Accounts Payable
+200009,Pre Banner AP Balances
+200011,AP Accruals
+200014,Year End Accounts Payable
+200017,Willy Card Payable
+200020,Willy Card Trust
+200023,Sales Tax Payable
+200026,Deposits
+200027,VA33 EFT Payments
+200029,AR Refunds Clearing
+200030,AR Refunds Clearing Manual
+200032,Interface Feeds Account Suspense
+200035,AR Contract Clearing-Third Party
+200115,Miscellaneous
+210005,Taxes-Fica
+210007,Taxes-Federal
+210009,Taxes-State/Local
+210011,Taxes-Earned Income
+210013,Pedp Traditional
+210015,Pre-Paid Legal Serv
+210017,MET Life
+210019,State Retirement
+210021,Tiaa Cref
+210023,Emia Care Plus
+210025,Emia Supplem Ins
+210027,United Fund
+210029,Amer Fed Of Teachers
+210031,Am Family Life Ins
+210033,Goodwill Association
+210035,Recovery Services
+210037,Bankers Life Tax She
+210039,Putnam Tax Shelter
+210040,Utah Educational Saving Plan UESP
+210041,Great Am Life Ins
+210043,Openheimer Funds Tax
+210045,Beneficial Life
+210047,State Accident Ins
+210049,Emia Basic Life Ins
+210051,Emia Dependent Life
+210053,Emia Lg Term Dis Ins
+210055,Workmans Comp Lo Rsk
+210057,Workmans Comp High R
+210059,Deposit To Checking
+210061,Upea Dues
+210063,UT Alliance-Police O
+210065,UVCC Payroll Adv
+210067,State Ret Non-Colleg
+210069,Partners In Progress
+210071,Utah Nurses Assoc
+210073,Federated Staff
+210075,Health Plus
+210076,Anchor National Life
+210077,Emia Dental Pref
+210079,Fidelity Investments
+210081,Copeland Companies
+210083,Valic
+210085,Employer-Fica
+210087,Employer-Unemploymnt
+210089,Employer-Benefits
+210091,UVSCNet Payroll Deduction
+210093,UVT Athletic Tickets
+210095,Long-Term Care Insurance
+220005,CUR Accrued Payroll
+230005,CUR Accrued Early Retirement
+240005,CUR Deferred Revenue
+250005,Deposits
+250010,A/R Unapplied Payments
+250015,Third Party/Sponsor Unapplied Pmts
+250020,Financial Aid Unapplied Pmts
+250025,Installment Unapplied Pmts
+250030,Exemptions Unapplied Pmts
+250100,EFT Student Loans
+250102,Bank One Of Utah
+250104,First Interstate Bank
+250106,First Security Bank
+250108,Key Bank Of Utah
+250110,Mountain America CU
+250112,U Of Utah CU
+250114,Zions First Nat Bank
+250116,Universal Campus CU
+250118,Tooele Federal CU
+250120,Weber State Federal
+250122,Family First Federal
+250124,Jordan Credit Union
+250126,Community First Bank
+250128,Granite District CU
+250130,United Savings Bank
+250132,West One Bank
+250134,Barnes Banking Co
+250136,Washington Mutual Inc
+250138,Bank One Of Arizona
+250140,US Bank
+250142,USA Funds
+250144,Salt Lake City CU
+250146,American First CU
+250148,USU Comm CU
+250150,Deseret First CU
+260000,Interchart Due To/Due From
+260001,Due to Other Funds
+270005,CUR Lease Payables
+270010,CUR Notes Payable-1
+270015,CUR Notes Payable-2
+280005,CUR 1995 Bonds Payable
+280006,CUR 1995 Bond Discount
+280010,CUR 1999 Bonds Payable
+280011,CUR 1999 Bond Discount
+280015,CUR 2000 Bonds Payable
+280016,CUR 2000 Bond Premium
+280020,CUR MBA 2004AB Bonds Payable
+280021,CUR MBA 2004B Bond Premium
+280022,CUR MBA 2004A Bond Discount
+280023,CUR MBA 2004B Deferred Amt Refunding
+280025,CUR SBR 2004AB Bonds Payable
+280026,CUR SBR 2004AB Bond Premium
+280027,CUR SBR 2004A Deferred Amt Refunding
+280028,CUR SBR 2004B Deferred Amt Refunding
+290005,NC Lease Payables
+290010,NC Notes Payable-1
+290015,NC Notes Payable-2
+291005,NC Accrued Early Retirement
+292001,NC Deferred Revenue
+292002,Instit Capital Cont
+292003,Fed Capital Cont
+292004,Other Deferred Rev
+295005,1995 Bonds Payable
+295006,1995 Bond Discount
+295010,1999 Bonds Payable
+295011,1999 Bond Discount
+295015,2000 Bonds Payable
+295016,2000 Bond Premium
+295020,MBA 2004AB Bonds Payable
+295021,MBA 2004B Bond Premium
+295022,MBA 2004A Bond Discount
+295023,MBA 2004B Deferred Amt on Refunding
+295024,Error-can reuse
+295025,SBR 2004AB Bonds Payable
+295026,SBR 2004AB Bond Premium
+295027,SBR 2004A Deferred Amt on Refunding
+295028,SBR 2004B Deferred Amt on Refunding
+310000,Net Assets
+320000,Invested in Capital Assets
+330000,Unrestricted Net Assets
+340000,Restricted Non-Expendable Fund Bal
+350050,Res Expnd Fnd Bal-US Gov Grnt Refnd
+350100,Res Expendable Fund Balance-Loans
+350150,Res Expendable Fund Bal-Cap Project
+350200,Res Expndable Fund Bal-Debt Service
+360000,Assets Held in Custody for Others
+500000,Revenue Budget
+501105,Resident Undergraduate
+503105,Resident Graduate
+506105,Nonresident Undergraduate
+508105,Nonresident Graduate
+509000,Tuition-Off Budget
+509005,Tuition -Off Budget
+511105,Resident 10 percent
+511305,Senior Citizens
+511505,Police/Firefighter Survivor
+511605,Wards of the State
+511705,Public School Teacher 
+511805,Employee Tuition Remissions
+511905,National Guard Waivers
+511955,MATC General Ed
+516105,Nonres Merit Res Portion First Year
+516205,Nonres Merit Nonres Portion 1st Yr
+516305,Nonres Merit Nonres Portion Cont
+516705,WICHE/WUE
+517005,Certain High School Graduates
+520105,Off Campus Fees
+520110,STL Write-Off
+520115,Tuition Write-Off
+520118,Petitions Tuition Adjustments
+520120,Financial Aid Repay
+520125,Admission Fee W/O
+520130,Collection of Prev Write-offs
+520135,Activity Fees
+520140,Admission Fees-Undergraduate
+520142,Admission Fees-Graduate
+520145,Class Change Fee
+520150,Graduation Fee
+520155,Late Payment Fee
+520160,Recording Fee
+520165,Special Exam Fee
+520170,Testing Fee
+520175,Transcript Fee
+520505,Activity Fee-Spring
+520510,Activity Ctr Fee-Spring
+520515,Athletic Fee-Spring
+520520,Building Fee-Spring
+520525,Computer Fee-Spring
+520530,Student Center Fee-Spring
+520605,Activity Fee-Summer
+520610,Activity Ctr Fee-Summer
+520615,Athletic Fee-Summer
+520620,Building Fee-Summer
+520625,Computer Fee-Summer
+520630,Student Center Fee-Summer
+520705,Activity Fee-Fall
+520710,Activity Ctr Fee-Fall
+520715,Athletic Fee-Fall
+520720,Building Fee-Fall
+520725,Computer Fee-Fall
+520730,Student Center Fee-Fall
+525005,Lab Access Fee
+525010,Lab Fees-Misc
+525015,Other Fees
+534005,State Appropriations
+534010,State Appropriations-Capital
+534015,State Approp-State Trust Funds
+540105,Fed Grants and Contracts-Exchange
+540110,Fed Grants and Contracts Non-exch
+540115,Fed Grants and Contracts-Capital
+540505,State Grants and Contracts-Exchange
+540510,State Grants and Contracts Non-exch
+545015,State Grants and Contracts-Capital
+540905,Private Grants and Contracts
+540910,Donations
+540913,Donations-Capital
+540915,Donations-Phonathon
+540920,Donations-Presidential
+540925,Donations-Golf Tournament
+560105,Admit-Athletics Taxable
+560110,Admit-Dance Taxable
+560115,Admit-Other Taxable
+560120,Admit-Theater Taxable
+560125,Art/Graphic Supplies-Taxable
+560130,Amusement Taxable
+560135,Books-Gen Reading Taxable
+560140,Catering Taxable
+560155,Clothing Taxable
+560160,Computer Supplies Taxable
+560165,Computers Taxable
+560170,Concessions Taxable
+560175,Confection Taxable
+560180,Copies Taxable
+560190,Food Taxable
+560191,Snacks Taxable
+560192,Sundries Taxable
+560193,Restaurant Taxable
+560195,Gifts/Jewelry Taxable
+560205,Other Taxable
+560240,Service Taxable
+560245,Software Taxable
+560255,Supplies Taxable
+560260,Text Books -New Taxable
+560265,Tickets Taxable
+560270,Text Books -Used Taxable
+560505,Admit-Athletics Non-Taxable
+560510,Admit-Dance Non-Taxable
+560515,Admit-Other Non-Taxable
+560520,Admit-Theater Non-Taxable
+560525,Advertising Non-Taxable
+560530,Amusement Non-Taxable
+560535,Books-Gen Reading Non-Taxable
+560540,Art/Graphic Supplies Non-Taxable
+560545,Catalog Non-Taxable
+560550,Catering Non-Taxable
+560555,Clothing Non-Taxable
+560560,Computer Supplies Non-Taxable
+560565,Computers Non-Taxable
+560570,Concessions Non-Taxable
+560575,Confection Non-Taxable
+560580,Copies Non-Taxable
+560585,Decals Non-Taxable
+560590,Food Non-Taxable
+560591,Snacks Non-Taxable
+560592,Sundries Non-Taxable
+560593,Restaurant Non-Taxable
+560595,Gifts/Jewelry Non-Taxable
+560600,Meters Non-Taxable
+560605,Other Non-Taxable
+560610,Parking Non-Taxable
+560615,Parking Lot L Non-Taxable
+560620,Parking Lot D Non-Taxable
+560625,Printing Non-Taxable
+560630,Remotes Non-Taxable
+560635,Schedules Non-Taxable
+560640,Service Non-Taxable
+560645,Software Non-Taxable
+560650,Stamps Non-Taxable
+560655,Supplies Non-Taxable
+560660,Text Books -New Non-Taxable
+560665,Tickets Non-Taxable
+560670,Text Books -Used Non-Taxable
+560675,UTA Bus Pass Non-Taxable
+560680,Vending Non-Taxable
+560685,Shipping and Handling Non-Taxable
+560690,Aviation Flight Time Non-Taxable
+560805,Fines
+560810,Over/Short
+560815,Returned Check Charges
+560820,Service Charges
+560825,Service Reimbursements
+560830,Other
+560835,Interest Income-Operations
+560840,Interest Income-Canceled/Other
+560905,Conferences and Workshops
+560908,Instructional Supplies
+560911,Rental-ATM
+560914,Rental-Equipment Non-Tax
+560917,Rental-Events Center Non-Tax
+560920,Rental-Lease Payments
+560923,Rental-Lockers Non-Tax
+560926,Rental-Other Non-Tax
+560929,Rental-Rooms Non-Tax
+560932,Services-Tutoring
+560935,Services-LMS
+560938,Signs
+560941,Dues
+580005,Interest Income
+580010,Gains/Losses
+582001,Allocated Indirect Costs
+582004,Computer Hardware-Intra Campus
+582007,Computer Network Parts Intra Campus
+582010,Computer Software-Intra Campus
+582013,Conferences/Training-Intra Campus
+582016,Culinary Arts-Intra Campus
+582019,Events Center-Intra Campus
+582022,Keys and Locks-Intra Campus
+582025,Luncheons/Receptions-Intra Campus
+582028,Maintenance/Remodeling Intra Campus
+582031,Misc-Intra Campus charges
+582034,Parking-Intra Campus
+582037,Postage and Handling-Intra Campus
+582040,Printing-Intra Campus
+582043,Publicity/Advertising Intra Camp
+582046,Reimbursements-Intra Campus
+582049,Rentals-Intra Campus
+582052,Services Miscellaneous Intra Campus
+582055,Services-Police Intra Campus
+582058,Signs-Intra Campus
+582061,Telephone-Long Dist Intra campus
+582064,Telephone-Fax/Modem Intra campus
+582067,Telephone Services-Intra campus
+582070,Transfers-Intra Campus
+582073,UVSC Net-Intra Campus
+582076,Warehouse-Intra Campus
+582501,Gain on Sale of Fixed Assets
+582900,Expended for Plant (Offset Cap Exp)
+582905,Expended for Leases (Offset pmts)
+611005,Faculty -Instr Salaries
+611010,Faculty -Adm Salaries
+613001,Exec/Adm Salaries
+615001,Exempt Staff Salaries
+615002,Non-exempt Staff Salaries
+620000,Wages/Hourly Budget
+621001,Hourly Faculty Regular
+625001,Hourly Staff Regular
+630000,Benefits Budget
+630001,Benefits Cost Distribution
+630101,Workers Comp
+630201,FICA Match
+630301,TIAA Match
+630401,State Retirement Contributory
+630501,State Retirement Non-Contributory
+630502,Post Ret URS Amortization Contrbtn
+630701,Life Insurance
+630801,LT Disability Insurance
+630901,Indemnity Insurance
+631001,Health Insurance
+631002,UVU Employee Medical Claims
+632001,Dental Insurance
+632002,UVU Employee Dental Claims
+633002,Benefit Plans Fees
+640001,Taxable Cell Phone Reimbursements
+700000,Current/Capital/Travel Budget
+710000,Current Expense Budget
+710105,Building Maintenance and Repairs
+710108,Building Materials-Improvement
+710111,Electrical Supplies
+710114,Equipment-Maintenance
+710117,Equipment Repair-Maintenance
+710120,Grounds Maintenance
+710123,Janitorial Supplies
+710126,Keys and Locks
+710129,Laundry and Linen Services
+710132,Paint
+710135,Parking Lot Maintenance
+710138,Parts-Maintenance
+710141,Chemicals
+710144,Radios / Repair
+710147,Services-Maintenance
+710150,Signs       
+710153,Testing Services
+710156,Tools and Instruments
+710305,Ins-Fire and Boiler
+710310,Ins-Liability
+710315,Ins-Other
+710320,Ins-Vehicle
+710505,Auto Parts
+710510,Gas/Oil/Grease
+710515,Motor Vehicle Repair
+710520,Shuttle Bus Expense
+710525,Vehicle Maintenance
+710705,Telephone-Cellular
+710707,Payroll Reimbursed-Cell Phone
+710710,Telephone-Equipment
+710715,Telephone-Service Carriers
+710720,Telephone-Pagers
+710725,Utilities-Waste Removal
+710735,Utilities-Sewer
+710740,Utilities-Waste
+710745,Utilities-Water
+710905,Long Term Debt-Interest Expense
+710910,Retirement of Debt
+710915,Long Term Debt-Interest Expense
+710920,Retirement of Debt
+720001,Allocated Indirect Costs
+720004,Computer Hardware-Intra Campus
+720007,Comp Network Parts-Intra Campus
+720010,Computer Software-Intra Campus
+720013,Conferences/Training-Intra Campus
+720016,Culinary Arts-Intra Campus
+720019,Events Ctr Settlements Intra Campus
+720022,Keys and Locks-Intra Campus
+720025,Luncheons/Receptions-Intra Campus
+720028,Maintenance/Remodeling Intra Campus
+720031,Misc-Intra Campus charges
+720034,Parking Services-Intra Campus
+720037,Postage and Handling-Intra Campus
+720040,Printing-Intra Campus
+720043,Publicity/Advertising Intra Camp
+720046,Reimbursements-Intra Campus
+720049,Rentals-Intra Campus
+720052,Services-Misc-Intra Campus
+720055,Services-Police Intra Campus
+720058,Signs-Intra Campus
+720061,Telephone-Long Dist Intra campus
+720064,Telephone-Fax/Modem Intra campus
+720067,Telephone Services-Intra campus
+720070,Transfers-Intra Campus
+720073,UVSC Net-Intra Campus
+720076,Warehouse-Intra Campus
+720090,Wolverine Marketplace Computer Shop
+720091,Wolverine Marketplace Warehouse Stores
+720105,Conf/Seminars-Off Campus
+720110,Non-UVU Tuition Reimbursement
+720135,Annuity Expense
+720155,Books and Publishing -non-Library
+720160,Copying Costs
+720165,Printing Supplies and Services
+720205,Books and Publishing-Library
+720210,Clothing/Uniforms-Instructional
+720215,Equipment-Instructional
+720255,Audio Visual Supplies
+720260,Food-Classrooms
+720265,Fuel-Aviation
+720270,Instructional Supplies
+720275,Parts-Instructional
+720280,Periodicals Binding 
+720285,Photo Supplies/Service
+720290,Scenery and Props
+720295,Testing Supplies
+720355,Lease Payments-Buildings
+720360,Lease Payments-Equipment
+720365,Lease Payments-Other
+720405,Services-Consulting
+720410,Services-Contract 1099
+720415,Services-Instruction
+720420,Services-Officials
+720425,Services-Other
+720430,Services-Professional
+720435,Services-Staffing
+720440,Services-Testing
+720445,Stipends 
+720505,Advertising and Publicity
+720508,Awards and Gifts
+720511,Clothing/Uniforms
+720512,Tickets/Entertainment
+720514,Computer Software
+720516,Software as a Service (SaaS)
+720517,Deposit Refunds
+720520,Floral Arrangement
+720523,Freight-General
+720526,Indirect Overhead Costs
+720529,Interest / Bank Charges
+720532,Interest Expense
+720535,Limited Purchase Exp
+720538,Luncheons/Receptions
+720541,Medical Care and Related Supplies
+720544,Memberships
+720547,Moving/Relocation
+720550,Office Supplies
+720553,Other Office and General
+720556,Postage and Handling
+720559,Procurement Card
+720562,Project Expenses
+720565,Subscriptions
+720568,Taxes and Assessments
+720571,Wolverine Card
+720574,Loan Clearing/WO
+720705,Equipment Repair-Office
+720710,Office Equipment
+720715,Office Furniture
+720720,Computer Hardware/Parts
+720725,Computer Network / Parts
+720805,Rentals-General
+720810,Rentals-Space
+730005,Resale-New Text Books
+730008,Resale-Bus Passes
+730011,Resale-Computers
+730014,Resale-Computers/Ele
+730017,Resale-Events Center
+730020,Resale-Food
+730023,Resale-Freight
+730026,Resale-Gifts/Cards
+730029,Resale-Kitchenware
+730032,Resale-Movie Passes
+730035,Resale-General Reading
+730038,Resale-Soft Goods
+730041,Resale-Software
+730044,Resale-Stamps
+730047,Resale-Supplies
+730050,Resale-Used Text Books
+740000,Fuel and Power Budget
+741005,Utilities-Gas
+742005,Utilities-Electric
+744005,Utilities-Fuel
+745005,Utilities-Other
+750000,Travel Expense Budget
+750005,In State Travel
+750010,In State Travel Motor Pool Charges
+750015,Out State Travel
+750020,Travel Advance
+750025,Recruiting Travel
+750030,International Travel
+760000,Scholarship Budget
+760005,Cost of Princ and Int Cancel
+760010,Scholarships-Federal
+760011,Scholarships-Federal PELL-Odd Year
+760012,Scholarships-Federal PELL-Even Year
+760015,Scholarships-State
+760020,Scholarships-Private
+760025,Scholarships-Exchange
+760030,Scholarships-Food
+760035,Scholarships-Housing
+760040,Tuition Expense
+760045,Tuition Refunds
+760050,Tuition Waivers
+760100,Sub Stafford Loans - Even
+760101,Sub Stafford Loans - Odd
+760104,Unsub Stafford Loans - Even
+760105,Unsub Stafford Loans - Odd
+760108,Additional Stafford Loans - Even
+760109,Additional Stafford Loans - Odd
+760112,Plus Loans - Even
+760113,Plus Loans - Odd
+760116,Grad Sub Stafford Loan - Even
+760117,Grad Sub Stafford Loan - Odd
+760120,Grad Unsub Stafford Loan - Even
+760121,Grad Unsub Stafford Loan - Odd
+760124,Grad Additional Stafford Loan - Even
+760125,Grad Additional Stafford Loan - Odd
+760128,Grad PLUS Loan - Even
+760129,Grad PLUS Loan - Odd
+770000,Capital Expenditure Budget
+770001,Capital Exp-Library Books/Films
+770002,Leasehold Improvements
+770005,Aircraft
+770010,Audio Visual Equip
+770015,Data Process Equip/Computers
+770020,Instructional Equip
+770025,Misc Equipment
+770030,Motor Vehicles
+770035,Office Equipment
+770040,Buildings/Additions/Major Imp
+770045,Infrastructure
+770050,Land Improvements-Depreciable
+770055,Land Improvements-Non Depreciable
+770060,Land Purchases
+770063,Works of Art/Hist Treasures
+770065,Capital Leases-Equipment
+770070,Buildings
+770075,Land
+779000,Gain/Loss on Disposal of Asset
+780005,Depreciation Land Improvements
+780010,Depreciation Infrastructure
+780015,Depreciation Buildings
+780020,Depreciation Equipment
+780025,Depreciation Library Books/Films
+780030,Depreciation Leasehold Improvements
+790005,Indirect Costs
+810005,Transfers-Mandatory-In
+820005,Transfers-Mandatory-Out
+850005,Trans-Non Mandatory-In
+860005,Trans-Non Mandatory-Out
+910000,Fund Additions
+960000,Fund Deductions
