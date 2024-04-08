@@ -1,11 +1,11 @@
-public class Party
+public abstract class Party
 {
     // These are the attributes
-    private string _firstName;
-    private string _lastName;
-    private string _title;
-    private string _department;
-    private List<string> _activityCodes;
+    protected string _firstName;
+    protected string _lastName;
+    protected string _title;
+    protected string _department;
+    protected List<string> _activityCodes;
 
     // This is the constructor
     public Party(string firstName, string lastName, string title, string department, List<string> activityCodes)
@@ -16,4 +16,6 @@ public class Party
         _department = department;
         _activityCodes = activityCodes;
     }
+
+    public abstract void DisplayParty();
 }

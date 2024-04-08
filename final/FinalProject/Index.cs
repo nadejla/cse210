@@ -13,12 +13,13 @@ public class Index
     }
 
     // These are the methods
+    
     public void AddActivityCode(ActivityCode activityCode)
     {
         _activityCodes.Add(activityCode);
     }    
 
-    public string DisplayYIndexCode()
+    public string GetWIndexCode()
     {
         string wIndexCode = _indexCode;
         char[] charArray = wIndexCode.ToCharArray();
@@ -29,13 +30,13 @@ public class Index
     
     public void DisplayIndex()
     {
-        string wIndexCode = DisplayYIndexCode();
+        string wIndexCode = GetWIndexCode();
         Console.WriteLine($"{wIndexCode} - {_indexDescription}");
     }
 
     public void DisplayIndexAndActivities()
     {
-        string wIndexCode = DisplayYIndexCode();
+        string wIndexCode = GetWIndexCode();
         Console.WriteLine($"\n{wIndexCode}   - {_indexDescription}");
         for (int i = 1; i < _activityCodes.Count; i++)
         {

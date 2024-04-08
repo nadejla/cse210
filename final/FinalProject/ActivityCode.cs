@@ -24,4 +24,9 @@ public class ActivityCode
     {
         return _activityCode;
     }
+
+    public string GetIndexCode()
+    {
+        return _index; 
+    }
 }

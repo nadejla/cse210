@@ -13,16 +13,17 @@ class Program
         Console.Write("Select a choice from the menu: ");
         MenuManager menuManager = new MenuManager();
         DataManager dataManager = new DataManager();
+        TransactionManager transactionManager = new TransactionManager();
         string menuResponse = Console.ReadLine();
         while (menuResponse != "3")
         {
             if (menuResponse == "1")
             {
-                menuManager.DisplayIndexMenu(dataManager);
+                menuManager.DisplayIndexMenu(dataManager, transactionManager);
             }
             if (menuResponse == "2")
             {
-                Console.WriteLine("This will display a list of people.");
+                menuManager.DisplayResponsiblePartyMenu(dataManager);
             }
             else
             {

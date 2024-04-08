@@ -4,6 +4,7 @@ public class DataManager
     private List<Account> _accounts;
     private List<Party> _parties;
     private List<Index> _indexes;
+    private List<ActivityCode> _activityCodes;
 
     public DataManager()
     {
@@ -13,6 +14,26 @@ public class DataManager
     }
 
     // These are the methods
+    public string GetIndexFromActivity(string activityCode)
+    {
+        string indexCode = "";
+        for (int i = 0; i < _activityCodes.Count; i++)
+        {
+            if (activityCode == _activityCodes[i].GetActivityCode())
+            {
+                indexCode = _activityCodes[i].GetIndexCode();
+            } 
+        }
+        for (int i = 0; i < _indexes.Count; i++)
+        {
+            if (indexCode == _indexes[i].GetIndexCode())
+            {
+                indexCode = _indexes[i].GetWIndexCode();
+            } 
+        }
+        return indexCode;
+    }
+    
     public void DisplayIndexList()
     {
         foreach (Index index in _indexes)
@@ -22,6 +43,14 @@ public class DataManager
                 Console.Write("-");
             }
             index.DisplayIndexAndActivities();
+        }
+    }
+
+    public void DisplayPartyList()
+    {
+        foreach (Party party in _parties)
+        {
+            party.DisplayParty();
         }
     }
 
@@ -43,6 +72,7 @@ public class DataManager
     public void GetIndexData()
     {
         _indexes = new List<Index>();
+        _activityCodes = new List<ActivityCode>();
         string fileName = "indexDescriptions.csv";
         string[] lines = System.IO.File.ReadAllLines(fileName);
         List<string> indexListChecker = new List<string>();
@@ -53,6 +83,7 @@ public class DataManager
             string activityCode = parts[1];
             string indexDescription = parts[2];
             ActivityCode activity = new ActivityCode(activityCode, indexDescription, indexCode);
+            _activityCodes.Add(activity);
             if (!indexListChecker.Contains(indexCode))
             {
                 indexListChecker.Add(indexCode);

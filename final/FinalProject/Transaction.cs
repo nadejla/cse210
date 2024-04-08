@@ -24,6 +24,6 @@ public class Transaction
     // This is a method.
     public string TransactionDetailString()
     {
-        return "";
+        return $"{_account} - {_date} - {_description} - {_activity} - {_field} - ${_amount}";
     }
 }
