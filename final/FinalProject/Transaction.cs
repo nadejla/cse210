@@ -1,3 +1,5 @@
+using System.Dynamic;
+
 public class Transaction
 {
     // These are the attributes.
@@ -25,5 +27,31 @@ public class Transaction
     public string TransactionDetailString()
     {
         return $"{_account} - {_date} - {_description} - {_activity} - {_field} - ${_amount}";
+    }
+
+    public string GetField()
+    {
+        return _field;
+    }
+
+    public float GetAmount()
+    {
+        return _amount;
+    }
+
+    public int GetAccountInt()
+    {
+        int accountInt = int.Parse(_account);
+        return accountInt;
+    }
+
+    public string GetAccountCode()
+    {
+        return _account;
+    }
+
+    public string GetActivity()
+    {
+        return _activity;
     }
 }

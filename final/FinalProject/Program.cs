@@ -23,7 +23,7 @@ class Program
             }
             if (menuResponse == "2")
             {
-                menuManager.DisplayResponsiblePartyMenu(dataManager);
+                menuManager.DisplayResponsiblePartyMenu(dataManager, transactionManager);
             }
             else
             {

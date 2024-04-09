@@ -14,6 +14,20 @@ public class DataManager
     }
 
     // These are the methods
+    public List<string> GetFundsFromParty(int partyChoice)
+    {
+        List<string> funds = new List<string>();
+        for (int i = 0; i < _parties.Count; i++)
+        {
+            Party party = _parties[i];
+            if (partyChoice == i + 1)
+            {
+                funds = party.GetFunds();
+            }
+        }
+        return funds;
+    }
+
     public string GetIndexFromActivity(string activityCode)
     {
         string indexCode = "";
@@ -33,6 +47,19 @@ public class DataManager
         }
         return indexCode;
     }
+
+    public string GetAccountDescription(string accountCode)
+    {
+        string accountDescription = "";
+        for (int i = 0; i < _accounts.Count; i++)
+        {
+            if (accountCode == _accounts[i].GetAccountCode())
+            {
+                accountDescription = _accounts[i].GetAccountDescription();
+            } 
+        }
+        return accountDescription;
+    }
     
     public void DisplayIndexList()
     {
@@ -48,9 +75,12 @@ public class DataManager
 
     public void DisplayPartyList()
     {
+        int index = 1;
         foreach (Party party in _parties)
         {
+            Console.Write($"{index}. ");
             party.DisplayParty();
+            index++;
         }
     }
 
@@ -111,9 +141,9 @@ public class DataManager
         _parties = new List<Party>();
         string fileName = "resp&delParties.csv";
         string[] lines = System.IO.File.ReadAllLines(fileName);
-        foreach (string line in lines)
+        for (int i = 1; i < lines.Length; i++)
         {
-            string[] parts = line.Split(",");
+            string[] parts = lines[i].Split(",");
             string firstName = parts[0];
             string lastName = parts[1];
             string title = parts[2];

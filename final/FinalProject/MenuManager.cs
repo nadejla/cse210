@@ -1,7 +1,6 @@
 public class MenuManager
 {
     //There are no attributes or constructors.
-
     //These are the methods
     public void DisplayIndexMenu(DataManager dataManager, TransactionManager transactionManager)
     {
@@ -28,25 +27,46 @@ public class MenuManager
             }
             else
             {
-                Console.WriteLine("Report will show here.");
+                transactionManager.DisplayIndexOverview(dataManager);
                 Console.WriteLine("\n1. Select another index or activity code");
                 Console.WriteLine("2. Return to main menu");
                 Console.Write("\nChoose an option: ");
                 choice = Console.ReadLine();
-            }
-            
-        }
-        
-
-        
+            }      
+        }  
     }
-    public void DisplayResponsiblePartyMenu(DataManager dataManager)
+    public void DisplayResponsiblePartyMenu(DataManager dataManager, TransactionManager transactionManager)
     {
         Console.Clear();
-        Console.WriteLine("Responsible Party Menu");
+        Console.WriteLine("\nResponsible Party Menu\n");
         dataManager.DisplayPartyList();
-        Console.Write("\nType the name of a Responsible or Delegated Party: ");
-        string partyChoice = Console.ReadLine();
+        Console.WriteLine($"\n1. Select Person");
+        Console.WriteLine($"2. Return to main menu");
+        Console.Write("\nChoose an option: ");
+        string choice = Console.ReadLine();
+        while (choice != "2")
+        { 
+            Console.Write("\nSelect Responsible or Delegated Party by typing corresponding number: ");
+            int partyChoice = int.Parse(Console.ReadLine());
+            List<string> funds = dataManager.GetFundsFromParty(partyChoice);
+            bool reportAvailable = transactionManager.GetFundsTransactions(funds, dataManager);
+            if (!reportAvailable)
+            {
+                Console.WriteLine("\n1. Select another person");
+                Console.WriteLine("2. Return to main menu");
+                Console.Write("\nChoose an option: ");
+                choice = Console.ReadLine();
+            }
+            else
+            {
+                transactionManager.DisplayIndexOverview(dataManager);
+                Console.WriteLine("\n1. Select another person");
+                Console.WriteLine("2. Return to main menu");
+                Console.Write("\nChoose an option: ");
+                choice = Console.ReadLine();
+            }
+        }
+        
     }
     public void ExportTransactions()
     {

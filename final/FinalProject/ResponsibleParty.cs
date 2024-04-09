@@ -19,4 +19,18 @@ public class ResponsibleParty : Party
     {
         Console.WriteLine($"{_firstName} {_lastName}");
     }
+
+    public override List<string> GetFunds()
+    {
+        List<string> funds = new List<string>();
+        foreach (string index in _indexes)
+        {
+            funds.Add(index);
+        }
+        foreach (string activity in _activityCodes)
+        {
+            funds.Add(activity);
+        }
+        return funds;
+    }
 }

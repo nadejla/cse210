@@ -19,4 +19,9 @@ public class DelegatedParty : Party
     {
         Console.WriteLine($"- {_firstName} {_lastName}");
     }
+
+    public override List<string> GetFunds()
+    {
+        return _activityCodes;
+    }
 }

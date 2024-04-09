@@ -18,4 +18,6 @@ public abstract class Party
     }
 
     public abstract void DisplayParty();
+
+    public abstract List<string> GetFunds();
 }
