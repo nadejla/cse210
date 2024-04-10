@@ -13,6 +13,7 @@ public class MenuManager
         string choice = Console.ReadLine();
         while (choice != "2")
         {
+            transactionManager.ClearTransactionData();
             Console.Write("\nType an index or activity code: ");
             string userChoice = Console.ReadLine();
             string upperChoice = userChoice.ToUpper();
@@ -27,7 +28,8 @@ public class MenuManager
             }
             else
             {
-                transactionManager.DisplayIndexOverview(dataManager);
+                TransactionDisplay transactionDisplay = new TransactionDisplay();
+                transactionDisplay.DisplayIndexOverview(dataManager, transactionManager);
                 Console.WriteLine("\n1. Select another index or activity code");
                 Console.WriteLine("2. Return to main menu");
                 Console.Write("\nChoose an option: ");
@@ -46,6 +48,7 @@ public class MenuManager
         string choice = Console.ReadLine();
         while (choice != "2")
         { 
+            transactionManager.ClearTransactionData();
             Console.Write("\nSelect Responsible or Delegated Party by typing corresponding number: ");
             int partyChoice = int.Parse(Console.ReadLine());
             List<string> funds = dataManager.GetFundsFromParty(partyChoice);
@@ -59,7 +62,8 @@ public class MenuManager
             }
             else
             {
-                transactionManager.DisplayIndexOverview(dataManager);
+                TransactionDisplay transactionDisplay = new TransactionDisplay();
+                transactionDisplay.DisplayIndexOverview(dataManager, transactionManager);
                 Console.WriteLine("\n1. Select another person");
                 Console.WriteLine("2. Return to main menu");
                 Console.Write("\nChoose an option: ");

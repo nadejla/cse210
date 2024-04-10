@@ -6,14 +6,6 @@ public class SummarizedTransaction
     private string _activity;
     private float _total;
 
-    public SummarizedTransaction(string account, string accountDescription, string filed, string activity)
-    {
-        _account = account;
-        _accountDescription = accountDescription;
-        _field = filed;
-        _activity = activity;
-    }
-
     public SummarizedTransaction(string account, string accountDescription, string filed, string activity, float total)
     {
         _account = account;
